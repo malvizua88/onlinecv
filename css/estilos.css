@@ -13,13 +13,12 @@
     align-items: center;
 }
 
-.welcome:hover{
+.welcome:hover {
     color: grey;
-
 }
 
-.header-name{
-    font-size: 20px;
+.header-name {
+    font-size: 50px;
     font-weight: 600;
 }
 
@@ -142,7 +141,7 @@ ul {
 
 ul li {
     list-style-type: none;
-    font-size: 30px;
+    font-size: 100px;
     font-weight: bold;
     margin: 0 15px;
     padding: 15px;
@@ -192,12 +191,6 @@ nav ul {
 .cover-letter {
     padding-top: 120px;
     padding-bottom: 130px;
-}
-
-.contact-me {
-    padding-top: 50px;
-    padding-bottom: 100px;
-
 }
 
 .cover {
@@ -251,7 +244,6 @@ h4 {
 .nubes {
     display: flex;
     flex-direction: column;
-    position: fixed;
     background-image: url("../img/clouds.jpg");
     background-size: cover;
     box-shadow: inset 1px 6px 11px 0px rgba(0, 0, 0, 0.75);
@@ -263,7 +255,7 @@ input[type="checkbox"] {
     display: none;
 }
 
-input[type="checkbox"]:checked ~ nav {
+input[type="checkbox"]:checked~nav {
     display: block;
 }
 
@@ -291,10 +283,26 @@ input[type="checkbox"]:checked ~ nav {
     margin: 5px;
     background-color: rgb(12, 12, 12);
     border-radius: 5px;
-    border: 2px solid black
+    border: 2px solid black;
 }
 
 @media (min-width: 800px) {
+    form {
+        display: flex;
+        gap: 20px;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .input-form:nth-child(3) {
+        flex-grow: 1;
+
+    }
+
     header {
         flex-direction: row;
         position: fixed;
@@ -330,12 +338,12 @@ input[type="checkbox"]:checked ~ nav {
 
     ul li {
         list-style-type: none;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
     }
 
-    .header-name{
-        display:none;
+    .header-name {
+        display: none;
     }
 }
 
@@ -352,7 +360,7 @@ table {
     margin: 0 auto;
     width: 80%;
     border: solid 2px black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     border-collapse: collapse;
     text-align: center;
     margin-bottom: 20px;
@@ -384,4 +392,52 @@ footer {
     height: 80px;
     background-color: grey;
     border: 2px solid black;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+    padding-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.input-label {
+    display: block;
+    margin-top: 10px;
+    text-shadow: 1px 1px #bdbcba;
+    font-weight: 600;
+}
+
+.input-text {
+    width: 400px;
+    height: 30px;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+.input-area {
+    width: 400px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+}
+
+.input-button {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.contact-me {
+    padding: 45px;
 }
